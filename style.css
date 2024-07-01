@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+
+    font-size: 25px;
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(6, 50px) / repeat(4, 50px);
+    grid-gap: 2px;
+}
+
+.item {
+    display: flex;
+    background-color: rgb(234, 181, 181);
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.button span {
+    pointer-events: none;
+}
+
+.sign span {
+    transform: translateY(-1px);
+}
+
+.output {
+    grid-area: 1 / 1 / 2 / 5;
+
+    padding: 10px 5px;
+}
+
+.zero-button {
+    grid-area: 6 / 1 / 7 / 3;
+}
+
+.button:active {
+    background-color: rgb(245, 161, 161);
+}
